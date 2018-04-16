@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Munsell Color Recognition App</string>
+    <string name="title_activity_list_of_data">ListOfData</string>
+    <string name="MunsellHuePrompt">Expected Munsell</string>
+    <string-array name="MunsellHueArray">
+        <item>5.0R</item>
+        <item>7.5R</item>
+        <item>10.0R</item>
+        <item>2.5YR</item>
+        <item>5.0YR</item>
+        <item>7.5YR</item>
+        <item>10.0YR</item>
+        <item>2.5Y</item>
+        <item>5.0Y</item>
+        <item>7.5Y</item>
+        <item>10.0Y</item>
+        <item>2.5GY</item>
+        <item>5.0GY</item>
+        <item>7.5GY</item>
+        <item>10.0GY</item>
+        <item>2.5G</item>
+        <item>5.0G</item>
+        <item>7.5G</item>
+        <item>10.0G</item>
+        <item>2.5BG</item>
+        <item>5.0BG</item>
+        <item>7.5BG</item>
+        <item>10.0BG</item>
+        <item>2.5B</item>
+        <item>5.0B</item>
+        <item>7.5B</item>
+        <item>10.0B</item>
+        <item>2.5PB</item>
+        <item>5.0PB</item>
+        <item>7.5PB</item>
+        <item>10.0PB</item>
+        <item>2.5P</item>
+        <item>5.0P</item>
+        <item>7.5P</item>
+        <item>10.0P</item>
+        <item>2.5RP</item>
+        <item>5.0RP</item>
+        <item>7.5RP</item>
+        <item>10.0RP</item>
+        <item>2.5R</item>
+        <item>N</item>
+    </string-array>
+
+    <string name="MunsellValuePrompt">Expected Munsell</string>
+    <string-array name="MunsellValueArray">
+        <item>0</item>
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+
+    <string name="MunsellChromaPrompt">Expected Munsell</string>
+    <string-array name="MunsellChromaArray">
+        <item>0</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+    </string-array>
+</resources>

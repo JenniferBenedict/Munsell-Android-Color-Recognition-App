@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_submit_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.munsellapp.munsellcolorrecognitionapp.SubmitForm">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Munsell Chip:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amMunsellText"
+        android:layout_below="@+id/sfIdEdit"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/sfIdEdit"
+        android:hint="Enter ID here..."
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="16sp"
+        android:layout_alignLeft="@+id/sfMunsellChip"
+        android:layout_alignStart="@+id/sfMunsellChip" />
+
+    <TextView
+        android:text="Testing "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/amMunsellText"
+        android:layout_toRightOf="@+id/amMunsellText"
+        android:layout_toEndOf="@+id/amMunsellText"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:id="@+id/sfMunsellChip"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:weightSum="2"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/linearLayout"
+        android:layout_toEndOf="@+id/linearLayout">
+
+        <ImageButton
+            android:text="Save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:id="@+id/sfSaveButton"
+            app:srcCompat="@drawable/savebutt"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_weight="1.02" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Location Not Available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/sfMunsellChip"
+        android:layout_alignStart="@+id/sfMunsellChip"
+        android:id="@+id/textView6"
+        />
+
+    <TextView
+        android:text="Location:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView5"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_below="@+id/amMunsellText"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:text="Notes:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView5"
+        android:layout_toLeftOf="@+id/sfMunsellChip"
+        android:layout_toStartOf="@+id/sfMunsellChip"
+        android:layout_marginTop="39dp" />
+
+    <TextView
+        android:text="ID #:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/sfIdEdit"
+        android:layout_alignBottom="@+id/sfIdEdit"
+        android:layout_toLeftOf="@+id/sfMunsellChip"
+        android:layout_toStartOf="@+id/sfMunsellChip" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/sfNotesEdit"
+        android:hint="Enter notes here..."
+        android:maxLines="2"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+<!--The following widget is set to invisible for now, set to visible when testing-->
+    <TextView
+        android:text="Expected Munsell Chip:"
+        android:visibility="invisible"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/sfNotesEdit"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_toLeftOf="@+id/sfNotesEdit"
+        android:layout_toStartOf="@+id/sfNotesEdit" />
+    <!--The following widget is set to invisible for now, set to visible when testing-->
+
+    <TextView
+        android:text="Testing"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/textView16"
+        android:textSize="16sp"
+        />
+    <!--The following widget is set to invisible for now, set to visible when testing-->
+
+    <TextView
+        android:text="testing"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15"
+        android:id="@+id/textView18"
+        android:textSize="16sp" />
+    <!--The following widget is set to invisible for now, set to visible when testing-->
+
+    <TextView
+        android:text="RGB Distance:"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView17"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView14" />
+    <!--The following widget is set to invisible for now, set to visible when testing-->
+
+    <TextView
+        android:text="Munsell Distance:"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/textView15"
+        android:layout_toLeftOf="@+id/textView18"
+        android:layout_toStartOf="@+id/textView18"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+    <!--The following widget is set to invisible for now, set to visible when testing-->
+
+    <TextView
+        android:text="testing"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18" />
+
+</RelativeLayout>
